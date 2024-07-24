@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.inner {
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.links a:not(:last-child) {
+  margin-right: 20px;
+}
