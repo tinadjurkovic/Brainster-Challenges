@@ -22,8 +22,18 @@ img {
   max-width: 100%;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
 .inner {
   padding: 10px 20px;
+}
+
+.section-inner {
+  padding: 5% 15%;
 }
 
 nav {
@@ -98,4 +108,18 @@ nav {
   padding: 20px 30px;
   border: 2px solid white;
   border-radius: 10px;
+}
+
+.section-one .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-one .image img {
+  height: 300px;
+  width: 750px;
+  border-radius: 50%;
 }
