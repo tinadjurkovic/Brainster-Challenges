@@ -123,8 +123,8 @@ nav {
 }
 
 .section-one .image img {
-  height: 300px;
-  width: 750px;
+  height: 250px;
+  width: 500px;
   border-radius: 50%;
 }
 
@@ -171,4 +171,38 @@ hr {
 
 .box p {
   color: #7f7e7e;
+}
+
+.section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+input {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: black;
+  outline: none;
+}
+
+button {
+  color: white;
+  background-color: #007bff;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
