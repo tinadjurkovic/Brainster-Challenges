@@ -1,0 +1,25 @@
+@use "sass:math";
+
+@function rem-calc($size) {
+  @return (math.div($size, 16)) * 1rem;
+}
+
+$font-family-base: "Open Sans", sans-serif;
+
+$line-height-base: 1.5;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$gutter-base: rem-calc(30);
+$gutter-base-links: rem-calc(15);
+
+$font-size-small: 10px;
+$font-size-medium: 15px;
+$font-size-large: 25px;
+
+$text-color-base: #000;
+$text-color-primary: #fff;
+$text-color-tertiary: #999;
+
+$background-color-base: #fff;

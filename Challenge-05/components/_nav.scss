@@ -1,0 +1,114 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+nav {
+  position: fixed;
+  @extend %section;
+
+  @include mix.mobile-l-styles {
+    position: relative;
+  }
+  @include mix.tablet-styles {
+    position: relative;
+  }
+
+  .inner {
+    @extend %wrap;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mix.mobile-l-styles {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0;
+    }
+    @include mix.tablet-styles {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    .logo {
+      cursor: pointer;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+
+      img {
+        width: auto;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: var.$gutter-base-links;
+
+      a {
+        text-decoration: none;
+        color: var.$text-color-tertiary;
+        text-transform: capitalize;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @include mix.mobile-l-styles {
+        display: none;
+      }
+      @include mix.tablet-styles {
+        display: none;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: var.$text-color-tertiary;
+      font-size: var.$font-size-small;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: var.$font-weight-bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @include mix.mobile-l-styles {
+        display: none;
+      }
+      @include mix.tablet-styles {
+        display: none;
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+    border: 1px solid var.$text-color-tertiary;
+    padding: 10px;
+    cursor: pointer;
+    i {
+      color: var.$text-color-tertiary;
+      font-weight: var.$font-weight-bold;
+      font-size: var.$font-size-large;
+    }
+
+    @include mix.mobile-l-styles {
+      display: block;
+    }
+    @include mix.tablet-styles {
+      display: block;
+    }
+  }
+}
