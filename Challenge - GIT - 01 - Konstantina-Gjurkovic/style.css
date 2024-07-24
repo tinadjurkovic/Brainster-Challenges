@@ -27,21 +27,75 @@ img {
 }
 
 nav {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .logo a {
   text-decoration: none;
+  color: #9cb4b8;
+}
+
+.logo a:hover {
   color: white;
 }
 
 .links a {
   text-decoration: none;
-  color: white;
+  color: #7d9fa5;
   font-weight: bold;
+}
+
+.links a:hover {
+  color: white;
 }
 
 .links a:not(:last-child) {
   margin-right: 20px;
+}
+
+.banner {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/image-01.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.banner .title {
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  padding: 15px 10px;
+}
+
+.banner .title h2 {
+  color: white;
+}
+
+.banner .description {
+  width: 40%;
+}
+
+.banner .description p {
+  color: white;
+  text-align: center;
+  line-height: 25px;
+}
+
+.banner a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 30px;
+  border: 2px solid white;
+  border-radius: 10px;
 }
