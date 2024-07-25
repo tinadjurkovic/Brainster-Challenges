@@ -281,3 +281,43 @@ button:hover {
     width: 90%;
   }
 }
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .banner .description {
+    width: 70%;
+  }
+
+  .banner a {
+    width: 50%;
+    text-align: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-one .image img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  input {
+    width: 70%;
+  }
+}
