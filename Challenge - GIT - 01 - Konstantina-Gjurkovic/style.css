@@ -49,6 +49,11 @@ nav {
   justify-content: space-between;
 }
 
+.menu {
+  display: none;
+  color: white;
+}
+
 .logo a {
   text-decoration: none;
   color: #9cb4b8;
@@ -232,4 +237,47 @@ button:hover {
 .socials i {
   font-size: 17px;
   cursor: pointer;
+}
+
+@media (max-width: 428px) {
+  .links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .banner .description {
+    width: 80%;
+  }
+
+  .banner a {
+    width: 80%;
+    text-align: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-one .image img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  input {
+    width: 90%;
+  }
 }
