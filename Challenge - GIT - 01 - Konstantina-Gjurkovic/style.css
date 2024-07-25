@@ -184,7 +184,7 @@ hr {
 
 input {
   width: 40%;
-  padding: 12px;
+  padding: 8px 12px;
   border: 1px solid #a8a8a8;
   border-radius: 5px;
 }
@@ -205,4 +205,31 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.ftr {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.ftr .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials i {
+  font-size: 17px;
+  cursor: pointer;
 }
