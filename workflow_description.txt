@@ -1,0 +1,12 @@
+    Here is a short description of my workflow:
+
+    1. Firstly, I went to GitLab and created a new private repository called: "Challenges-Konstantina-Gjurkovic-fs19", along with a README file.
+    2. Then I've navigated to the "Members" section and added the appropriate assistant as a "Maintainer".
+    3. The next step I've done is cloning the repository into my local machine using the command: git clone https://git.brainster.co/Konstantina.Gjurkovic/challenges-konstantina-gjurkovic-fs19.git
+    4. Then i created a new branch manually from Gitlab: Branches -> New Branch -> Challenge-01-HTML (create from:main)
+    5. After creating that new branch, I switched to that branch via the command: git checkout Challenge-01-HTML
+    6. Once I was in the desired branch I copied the files of the Challenge-01-HTML that were stored in my local machine and put them in this new branch, since this challenge was completed weeks before we started using GitLab.
+    7. Then, I executed the command: git status to see the modifications
+    8. After that, I executed the commands: "git add ." to stage all changes for commit, and "git commit -m "Challenge-01-completed" to commit the changes with a message.
+    9. With these steps I've successfully uploaded the Challenge-01-HTML solution into it's corresponding branch.
+    10. I repeat all of these steps for the next challenges.
