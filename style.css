@@ -2,6 +2,14 @@
   background-color: #333333;
 }
 
+.bg-neon-red {
+  background-color: #fa0706;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: white !important;
+}
 .carousel-inner {
   height: 60vh;
 }
@@ -48,6 +56,28 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./images/media.jpg");
   background-attachment: fixed;
-  background-position: top;
+  height: 15vh;
+}
+
+.banner {
+  background-image: url(./images/image1.jpg);
+  background-attachment: fixed;
+  height: 65vh;
+  position: relative;
+}
+
+.img-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(30%);
+}
+
+.img-wrap img {
+  border-radius: 50%;
+  width: 70%;
+}
+
+.testimonals {
   height: 15vh;
 }
