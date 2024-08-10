@@ -4,20 +4,21 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
+
     <script
       src="https://kit.fontawesome.com/2a4e18524e.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-navbar">
+    <nav class="navbar navbar-expand-lg bg-custom">
       <div class="container-fluid">
         <a class="navbar-brand text-secondary" href="./index.html">GLOZZOM</a>
         <button
@@ -40,7 +41,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
-                class="nav-link active border-start text-white"
+                class="nav-link active ps-3 border-start text-white"
                 aria-current="page"
                 href="./index.html"
                 >HOME</a
@@ -68,7 +69,504 @@
         </div>
       </div>
     </nav>
-
+    <main>
+      <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-image">
+                <img
+                  src="./images/image1.jpg"
+                  class="d-block w-100"
+                  alt="image1"
+                />
+              </div>
+              <div class="carousel-content text-end">
+                <h1>Heading One</h1>
+                <p>
+                  Fugiat cupidatat mollit eu ad officia cupidatat elit sunt
+                  aliquip voluptate eiusmod do lorem.
+                </p>
+                <button type="button" class="btn btn-danger">
+                  Sign Up Now
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-image">
+                <img
+                  src="./images/image2.jpg"
+                  class="d-block w-100"
+                  alt="image2"
+                />
+              </div>
+              <div class="carousel-content text-center">
+                <h1>Heading Two</h1>
+                <p>
+                  Fugiat cupidatat mollit eu ad officia cupidatat elit sunt
+                  aliquip voluptate eiusmod do lorem.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-image">
+                <img
+                  src="./images/image3.jpg"
+                  class="d-block w-100"
+                  alt="image3"
+                />
+              </div>
+              <div class="carousel-content text-start">
+                <h1>Heading Three</h1>
+                <p>
+                  Fugiat cupidatat mollit eu ad officia cupidatat elit sunt
+                  aliquip voluptate eiusmod do lorem.
+                </p>
+                <button type="button" class="btn btn-warning">
+                  Check it out
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-gear fs-4"></i>
+              <p class="mt-3 fw-bold">Turning gears</p>
+              <p class="desc">
+                Ex dolore minim duis est in duis amet quis qui dolor voluptate.
+                Exercitation esse.
+              </p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-cloud fs-4"></i>
+              <p class="mt-3 fw-bold">Sending data</p>
+              <p class="desc">
+                Ex dolore minim duis est in duis amet quis qui dolor voluptate.
+                Exercitation esse.
+              </p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-cart-shopping fs-4"></i>
+              <p class="mt-3 fw-bold">Making money</p>
+              <p class="desc">
+                Ex dolore minim duis est in duis amet quis qui dolor voluptate.
+                Exercitation esse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="get-started">
+          <div class="get-started-content text-center text-white">
+            <h3>Are you ready to get started?</h3>
+            <p>
+              Ex dolore minim duis est in duis amet quis qui dolor voluptate.
+              Exercitation esse.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-5">
+              <h4 class="fs-4">Lorem Ipsum</h4>
+              <p class="desc">
+                Ex ut consectetur dolore voluptate nulla.Aliqua et Lorem eiusmod
+                non exercitation duis. Tempor occaecat veniam qui sint dolor
+                pariatur ea cillum do ea excepteur. Sit in reprehenderit nisi
+                consequat consequat in nostrud duis pariatur. Consequat
+                cupidatat aute tempor cillum velit adipisicing irure fugiat ea
+                adipisicing. Nulla ex ut tempor ullamco occaecat nisi qui cillum
+                proident culpa. Pariatur commodo incididunt dolore adipisicing
+                fugiat et ad officia ad aute consectetur ullamco commodo.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-danger d-inline-block"
+              >
+                Learn more
+              </button>
+            </div>
+            <div class="col-md-4">
+              <img src="./images/laptop.png" class="img-fluid" alt="laptop" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="video-modal text-center">
+          <div class="video-modal-content text-white">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="fa-solid fa-play fs-3 text-white"></i>
+            </button>
+            <h4>See what we do</h4>
+          </div>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    width="470"
+                    height="315"
+                    src="https://www.youtube.com/embed/80YB3gJe1pc?si=JxnwU1wcqEQ4JrvS"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="photo-gallery">
+          <div class="text-center">
+            <h4 class="fs-4">Photo Gallery</h4>
+            <p class="desc">Check out our photos</p>
+          </div>
+          <div class="container gy-4">
+            <div class="row">
+              <div class="col-4 mb-4">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image1"
+                >
+                  <img src="./images/1.png" class="img-fluid" alt="image1" />
+                </button>
+                <div
+                  class="modal fade"
+                  id="image1"
+                  tabindex="-1"
+                  aria-labelledby="image1Label"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./images/1.png"
+                          class="img-fluid"
+                          alt="image1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image2"
+                >
+                  <img src="./images/2.png" class="img-fluid" alt="image2" />
+                </button>
+                <div
+                  class="modal fade"
+                  id="image2"
+                  tabindex="-1"
+                  aria-labelledby="image2Label"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./images/2.png"
+                          class="img-fluid"
+                          alt="image2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image3"
+                >
+                  <img src="./images/3.png" class="img-fluid" alt="image3" />
+                </button>
+                <div
+                  class="modal fade"
+                  id="image3"
+                  tabindex="-1"
+                  aria-labelledby="image3Label"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./images/3.png"
+                          class="img-fluid"
+                          alt="image3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mb-4">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image4"
+                >
+                  <img src="./images/4.png" class="img-fluid" alt="image4" />
+                </button>
+                <div
+                  class="modal fade"
+                  id="image4"
+                  tabindex="-1"
+                  aria-labelledby="image4Label"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./images/4.png"
+                          class="img-fluid"
+                          alt="image4"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image5"
+                >
+                  <img src="./images/5.png" class="img-fluid" alt="image5" />
+                </button>
+                <div
+                  class="modal fade"
+                  id="image5"
+                  tabindex="-1"
+                  aria-labelledby="image5Label"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./images/5.png"
+                          class="img-fluid"
+                          alt="image5"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#image6"
+                >
+                  <img src="./images/6.png" class="img-fluid" alt="image6" />
+                </button>
+                <div
+                  class="modal fade"
+                  id="image6"
+                  tabindex="-1"
+                  aria-labelledby="image6Label"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="./images/6.png"
+                          class="img-fluid"
+                          alt="image6"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-custom py-3">
+        <div class="form-title text-white text-center">
+          <h4 class="fs-5">Sign up for our Newsletter</h4>
+          <p class="desc">
+            Ex adipisicing dolor quis aliqua aliqua deserunt pariatur irure enim
+            dolore do officia anim laborum.
+          </p>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12 col-lg-6">
+            <div class="row g-4">
+              <div class="col-4">
+                <input
+                  type="text"
+                  class="form-control desc"
+                  placeholder="Enter name"
+                  aria-label="Enter name"
+                />
+              </div>
+              <div class="col-4">
+                <input
+                  type="email"
+                  class="form-control desc"
+                  placeholder="Enter e-mail"
+                  aria-label="Enter e-mail"
+                />
+              </div>
+              <div class="col-4">
+                <button type="submit" class="btn btn-primary w-50 desc">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="bg-black py-2 text-center text-white">
+        <p class="m-0">Copyright 2024 &copy Glozzom</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

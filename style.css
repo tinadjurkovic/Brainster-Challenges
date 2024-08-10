@@ -1,3 +1,53 @@
-.bg-navbar {
+.bg-custom {
   background-color: #333333;
+}
+
+.carousel-inner {
+  height: 60vh;
+}
+
+.carousel-image {
+  position: relative;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 45%;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: none;
+  box-shadow: none;
+}
+
+.desc {
+  font-size: 0.8rem;
+}
+
+.get-started {
+  position: relative;
+  background-image: url("./images/lights.jpg");
+  background-attachment: fixed;
+  height: 15vh;
+}
+
+.get-started-content,
+.video-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-modal {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/media.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  height: 15vh;
 }
