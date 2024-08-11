@@ -91,3 +91,10 @@
   border-radius: 50%;
   width: 50%;
 }
+
+@media (max-width: 768px) {
+  .carousel-content {
+    display: none;
+  }
+}
+
